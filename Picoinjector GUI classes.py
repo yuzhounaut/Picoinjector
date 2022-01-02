@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Dec 29 10:28:15 2021
 
-@author: Feng
+
+
 """
 
 from tkinter import *
@@ -86,17 +86,5 @@ class MainWindow:
         MainWindow.reset = StringVar()
         MainWindow.reset = 1
     
-    if __name__ == "__main__":
+    if __name__ == '__main__':
         obj = MainWindow()
-
-            
-    
-    
-        
-
-
-
-
-        
-
-
