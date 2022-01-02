@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Jan  3 00:30:02 2022
-
-@author: Feng
-"""
 
 import serial . tools . list_ports
 import serial
@@ -60,14 +55,3 @@ def read_from_port (ser) :
 thread = threading.Thread(target=read_from_port, args=(arduinoData, ))
 thread.start()
 master.mainloop()
-                
-                
-              
-                    
-                
-                
-                
-            
-                
-        
-            
