@@ -7,11 +7,14 @@ from tkinter import ttk
 import tkinter
 import threading
 from time import sleep
+import sys
+sys.path.append("path of GUI_Classes", eg. "D:\\CTC\\Openspritzer")
+from import sys
 from GUI_Classes import MainWindow
 master = Tk()
 MainWindow(master)
 arduinoData = MainWindow.Arduinodata
-Plist = [] #empty l i s t
+Plist = [] #empty list
 TotPuffDuration = 0
 TotPuffNum = 0
 TotPuffVol = 0
@@ -52,6 +55,6 @@ def read_from_port (ser) :
             MainWindow.PuffNum.set("Total Puff Number"+ str(TotPuffNum))
             MainWindow.PuffVol.set("Total Puff Volume"+ str(TotPuffVol)+ " pL")
             
-thread = threading.Thread(target=read_from_port, args=(arduinoData, ))
+thread = threading.Thread(target=read_from_port, args=(arduinoData,))
 thread.start()
 master.mainloop()
