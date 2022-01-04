@@ -16,7 +16,7 @@ class MainWindow:
         ports = serial.tools.list_ports.comports() #make list of ports where arduino might be connected
         available_ports = []
         for p in ports :
-            available_ports.append(p. device)
+            available_ports.append(p.device)
         print (available_ports) #just print to command window
         
         #Place port info into combo box
@@ -41,7 +41,7 @@ class MainWindow:
         
         #Entry Box
         self.e = Entry(master)
-        self.e.apck()
+        self.e.pack()
         entry = self.e.get()
         self.e.focus_set()
         
