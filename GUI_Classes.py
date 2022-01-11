@@ -65,7 +65,8 @@ class MainWindow:
         self.lab4 = Label(master, textvariable=MainWindow.PuffVol)
         self.lab4.pack()
     
-    def callback(self): #function to send input data to arduino sleep (0.5)
+    def callback(self): #function to send input data to arduino 
+        sleep (0.5)
         print("Port:", self.cb.get(), self.e.get())
         MainWindow.v.set("Puff" + self.e.get() + " ms")
         if self.switch_var.get() == 1: #dependent on button value. first value is changed
