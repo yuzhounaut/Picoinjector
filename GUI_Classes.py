@@ -80,6 +80,6 @@ class MainWindow:
     def reset(self):
         MainWindow.reset = StringVar()
         MainWindow.reset = 1
-    
-    if __name__ == '__main__':
+
+if __name__ == '__main__':
         obj = MainWindow()
