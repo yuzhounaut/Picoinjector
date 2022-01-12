@@ -18,17 +18,17 @@ Plist = [] #empty list
 TotPuffDuration = 0
 TotPuffNum = 0
 TotPuffVol = 0
-def read_from_port (ser) :
+def read_from_port(ser):
     global TotPuffDuration
     global TotPuffNum
     global TotPuffVol
-    while True :
+    while True:
         global Plist
         if MainWindow.reset == 1: #check if rest button was pressed
             TopPuffNum = 0
             TotPuffVol = 0
             TotPuffDuration = 0
-            print ("reset")
+            print("reset")
             MainWindow.reset = 0
         if len (Plist) >= 3: #once 3 values have been writen to list it will reset to empty
             Plist = []
