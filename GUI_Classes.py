@@ -83,4 +83,4 @@ class MainWindow:
         MainWindow.reset = 1
 
 if __name__ == '__main__':
-        obj = MainWindow()
+    obj = MainWindow()
