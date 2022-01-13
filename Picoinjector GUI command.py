@@ -8,7 +8,7 @@ import tkinter
 import threading
 from time import sleep
 import sys
-sys.path.append("path of GUI_Classes", eg. "D:\\CTC\\Openspritzer")
+sys.path.append("path of GUI_Classes", eg. "D:\\CTC\\Pico-Injector")
 from import sys
 from GUI_Classes import MainWindow
 master = Tk()
