@@ -11,6 +11,7 @@ class MainWindow:
         #Setup
         self.master = master
         master.title ("Pico-Injector GUI")
+        master.geometry('500x500')
         
         #Get nessasary Port info
         ports = serial.tools.list_ports.comports() #make list of ports where arduino might be connected
@@ -24,7 +25,8 @@ class MainWindow:
         self.cb.pack( )
         self.cb.bind('<<ComboboxSelected>>')
         self.cb.current(0) #random initial port
-        self.arduinoData = serial.Serial(self.cb.get(), 9600)
+        self.arduinoData = serial.Serial(self.cb.get(), 9600)  #serial port is instantiated
+        self.arduinoData.close() #close the serial port
         # selects port where data will be sent
         MainWindow.Arduinodata = serial.Serial(self.cb.get(), 9600)
         
