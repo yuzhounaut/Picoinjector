@@ -13,6 +13,9 @@ class MainWindow:
         master.title ("Pico-Injector GUI")
         master.geometry('500x500')
         
+        self.lab1 = Label(master, text="Select Device")
+        self.lab1.pack()
+        
         #Get nessasary Port info
         ports = serial.tools.list_ports.comports() #make list of ports where arduino might be connected
         available_ports = []
